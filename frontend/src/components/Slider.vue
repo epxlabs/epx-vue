@@ -3,7 +3,7 @@
   <div id="revolutionSlider" class="slider rev_slider" data-plugin-revolution-slider data-plugin-options='{"sliderLayout": "fullscreen", "fullScreenOffsetContainer": "", "fullScreenOffset": "0"}'>
     <ul>
       <li data-transition="fade">
-        <img src="video/landing.jpg"
+        <img src="/static/img/landing.jpg"
              alt=""
              data-bgposition="center center"
              data-bgfit="cover"
@@ -14,7 +14,7 @@
              data-volume="mute"
              data-videowidth="100%"
              data-videoheight="100%"
-             data-videomp4="video/landing.mp4"
+             data-videomp4="/static/videos/11845277.mp4"
              data-videopreload="preload"
              data-videoloop="loop"
              data-forceCover="1"
@@ -34,7 +34,7 @@
              data-y="center" data-voffset="-95"
              data-start="500"
              style="z-index: 5"
-             data-transform_in="y:[-300%];opacity:0;s:500;">DO YOU NEED A NEW</div>
+             data-transform_in="y:[-300%];opacity:0;s:500;">Are you ready for</div>
         <!--<div class="tp-caption"
              data-x="center" data-hoffset="150"
              data-y="center" data-voffset="-95"
@@ -49,14 +49,14 @@
              data-transform_in="y:[100%];s:500;"
              data-transform_out="opacity:0;s:500;"
              style="z-index: 5"
-             data-mask_in="x:0px;y:0px;">WEB DESIGN?</div>
+             data-mask_in="x:0px;y:0px;">THE FUTURE?</div>
         <!--<div class="tp-caption bottom-label"
              data-x="center" data-hoffset="0"
              data-y="center" data-voffset="5"
              data-start="2000"
              style="z-index: 5"
              data-transform_in="y:[100%];opacity:0;s:500;">Check out our options and features.</div>-->
-        <a class="tp-caption btn btn-lg btn-primary btn-slider-action"
+        <a class="tp-caption btn btn-lg btn-primary btn-slider-action" href="#learn-more"
            data-hash
            data-hash-offset="85"
            data-x="center" data-hoffset="0"

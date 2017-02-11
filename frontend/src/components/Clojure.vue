@@ -1,17 +1,9 @@
 <template>
+  <div>
+    <SiteHeader></SiteHeader>
   <div class="jumbotron">
   <h1>Why Clojure and ClojureScript?</h1>
 </div>
-
-<style>
-  div.main-content > p {
-    font-size: 18px;
-    font-weight: 100;
-    line-height: 1.75;
-    margin-bottom: 30px;
-  }
-</style>
-
 <div class="row">
   <div class="main-content col-md-8 col-md-offset-2">
     <p>
@@ -35,18 +27,27 @@
 
   </div>
 </div>
-
+</div>
 </template>
-
-
-
+<style>
+  div.main-content > p {
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.75;
+    margin-bottom: 30px;
+  }
+</style>
 <script>
+import SiteHeader from './SiteHeader'
 export default {
   name: 'Clojure',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    SiteHeader
   }
 }
 </script>
