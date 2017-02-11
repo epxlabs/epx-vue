@@ -1,5 +1,6 @@
 <template>
   <div>
+    <SiteHeader></SiteHeader>
     <div class="jumbotron">
       <h1>Node.js</h1>
     </div>
@@ -26,16 +27,26 @@
         </p>
       </div>
     </div>
+    <ContactUs></ContactUs>
+    <SiteFooter></SiteFooter>
   </div>
 </template>
 
 <script>
+import SiteHeader from './SiteHeader'
+import ContactUs from './ContactUs'
+import SiteFooter from './SiteFooter'
 export default {
   name: 'NodeJS',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    SiteHeader,
+    ContactUs,
+    SiteFooter
   }
 }
 </script>

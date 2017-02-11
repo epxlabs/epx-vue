@@ -1,5 +1,6 @@
 <template>
   <div>
+    <SiteHeader></SiteHeader>
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
         <br>
@@ -20,22 +21,30 @@
             Tweet</a>
           </div>
         </div>
-
       </div>
-
     </div>
+    <ContactUs></ContactUs>
+    <SiteFooter></SiteFooter>
   </div>
 </template>
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <script>
+import SiteHeader from './SiteHeader'
+import ContactUs from './ContactUs'
+import SiteFooter from './SiteFooter'
 export default {
   name: 'Blog',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    SiteHeader,
+    ContactUs,
+    SiteFooter
   }
 }
 </script>

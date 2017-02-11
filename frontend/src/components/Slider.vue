@@ -1,4 +1,5 @@
 <template>
+  <div>
   <div class="slider-container rev_slider_wrapper" style="height: 1000px;">
   <div id="revolutionSlider" class="slider rev_slider" data-plugin-revolution-slider data-plugin-options='{"sliderLayout": "fullscreen", "fullScreenOffsetContainer": "", "fullScreenOffset": "0"}'>
     <ul>
@@ -71,6 +72,7 @@
       </li>
     </ul>
   </div>
+</div>
 </div>
 </template>
 

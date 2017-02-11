@@ -1,5 +1,6 @@
 <template>
   <div>
+    <SiteHeader></SiteHeader>
     <div class="jumbotron">
       <h1>Cloud Apps need DevOps</h1>
     </div>
@@ -61,16 +62,27 @@
 
       </div>
     </div>
+    <ContactUs></ContactUs>
+    <SiteFooter></SiteFooter>
   </div>
 </template>
 
 <script>
+import SiteHeader from './SiteHeader'
+import ContactUs from './ContactUs'
+import SiteFooter from './SiteFooter'
+
 export default {
   name: 'Devops',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    SiteHeader,
+    ContactUs,
+    SiteFooter
   }
 }
 </script>

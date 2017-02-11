@@ -17,7 +17,7 @@ var router = new VueRouter({
 })
 
 new Vue({
-  el: '#root',
+  el: '#home',
   router: router,
   render: h => h(App)
 })

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <SiteHeader></SiteHeader>
     <div class="jumbotron">
       <h1>Imagine a World Without Servers...</h1>
     </div>
@@ -44,16 +45,26 @@
 
       </div>
     </div>
+    <ContactUs></ContactUs>
+    <SiteFooter></SiteFooter>
   </div>
 </template>
 
 <script>
+import SiteHeader from './SiteHeader'
+import ContactUs from './ContactUs'
+import SiteFooter from './SiteFooter'
 export default {
   name: 'Serverless',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    SiteHeader,
+    ContactUs,
+    SiteFooter
   }
 }
 </script>

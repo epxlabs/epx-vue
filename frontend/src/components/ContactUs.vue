@@ -40,16 +40,18 @@
       </div>
       <div class="col-md-6">
         <h4 class="heading-primary mt-lg">Get in <strong>Touch</strong></h4>
-        <p id="get-in-touch"></p>
+        <p id="get-in-touch">We are always available to help solve your business problems, meet others in the serverless space, and discuss what we're passionate about. You can get in touch with us here :-)</p>
         <hr>
         <ul id="contact-info" class="list list-icons list-icons-style-3 mt-xlg">
-          <li><i class="fa fa-phone"></i> <strong>Phone:</strong></li>
-          <li><i class="fa fa-envelope"></i> <strong>Email:</strong></li>
+          <li><i class="fa fa-phone"></i> <strong>Phone:</strong> 646.768.0123</li>
+          <li><i class="fa fa-envelope"></i> <strong>Email:</strong><a href="mailto:hello@epxlabs.com"></a> hello@epxlabs.com</li>
         </ul>
         <hr>
         <h4 class="heading-primary">Follow <strong>Us</strong></h4>
         <ul class="social-icons">
-          <li><a target="_blank"><i class="fa"></i></a></li>
+          <li class="social-icons-github"><a target="_blank" href="https://github.com/epxlabs/" title="GitHub"><i class="fa fa-github"></i></a></li>
+          <li class="social-icons-linkedin"><a target="_blank" href="https://www.linkedin.com/company/epx-labs/" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+          <li class="social-icons-twitter"><a target="_blank" href ="https://twitter.com/epxlabs" title="Twitter"><i class="fa fa-twitter"></i></a></li>
         </ul>
       </div>
     </div>

@@ -1,5 +1,6 @@
 <template>
   <div>
+  <SiteHeader></SiteHeader>
   <div class="jumbotron">
     <h1>About EPX Labs</h1>
   </div>
@@ -37,18 +38,28 @@
   <p>We are passionate about what we do -- from clean commit histories to elegant abstraction through thoughtful analysis. You found us because you are passionate about what you do. Together we will build great tools.</p>
 
     </div>
+    <ContactUs></ContactUs>
+    <SiteFooter></SiteFooter>
   </div>
 </template>
 
 
 
 <script>
+import SiteHeader from './SiteHeader'
+import ContactUs from './ContactUs'
+import SiteFooter from './SiteFooter'
 export default {
   name: 'AboutUs',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    SiteHeader,
+    ContactUs,
+    SiteFooter
   }
 }
 </script>

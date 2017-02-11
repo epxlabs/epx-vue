@@ -1,8 +1,7 @@
 <template>
   <div>
-    <slider></slider>
+    <Slider></Slider>
     <SiteHeader></SiteHeader>
-    <br>
     <div class="jumbotron" id="learn-more">
       <h1>World Class Cloud, Delivered.</h1>
       <br>
@@ -28,8 +27,8 @@
           You can say goodbye to ongoing infrastructure management concerns: security updates, deployment automation, and production scaling - we handle that for you.
         </p>
       </div>
-      <contact-us></contact-us>
-      <sitefooter></sitefooter>
+      <ContactUs></ContactUs>
+      <SiteFooter></SiteFooter>
     </div>
   </template>
   <script>
