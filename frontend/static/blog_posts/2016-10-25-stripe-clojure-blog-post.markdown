@@ -105,7 +105,7 @@ The "Customer object" is the primitive of every transaction that occurs through 
 
 ### Subscriptions
 
-Subscriptions are used to bill customers a set amount every month. 
+Subscriptions are used to bill customers a set amount every month.
 Subscriptions are optional. A customer may have multiple concurrent subscriptions.
 Here is the subscription block from the a customer object map:
 
@@ -201,7 +201,7 @@ Here is an example of a credit card source (remember, sources can be either cred
 
 ## Getting started with the library
 
-Today we will show the basic process of creating a test customer using the [stripe-clojure](https://github.com/prachetasp/stripe-clojure) library. We will also run through the process of creating a subscription and processing payments. When testing the library it is important to use the Test API key so that no real payments are processed. 
+Today we will show the basic process of creating a test customer using the [stripe-clojure](https://github.com/prachetasp/stripe-clojure) library. We will also run through the process of creating a subscription and processing payments. When testing the library it is important to use the Test API key so that no real payments are processed.
 
 *********************
 
@@ -261,7 +261,7 @@ If the previous step was done correctly, Stripe should return a customer map:
 
 ### Adding a default payment source
 
-Payment sources should be added using a tokenized form of the payment details. In this example we will create a test token using Stripe's token generator. A token simply represents a single source (credit cards or bank accounts) and can only be associated with one customer. In order to add the token to the customer we use the same create function we used previously. In this case the route will be the same however we will include an additional key value pair, `:source`. We also need to include the Stripe customer ID of the customer we want to add the source to. 
+Payment sources should be added using a tokenized form of the payment details. In this example we will create a test token using Stripe's token generator. A token simply represents a single source (credit cards or bank accounts) and can only be associated with one customer. In order to add the token to the customer we use the same create function we used previously. In this case the route will be the same however we will include an additional key value pair, `:source`. We also need to include the Stripe customer ID of the customer we want to add the source to.
 
 Create function:
 
@@ -271,7 +271,7 @@ Create function:
 
 *********************
 
-### Adding a Plan 
+### Adding a Plan
 
 A plan is required for subscription billing.
 You may create a plan for your customers using the `create` function.
@@ -299,8 +299,8 @@ Let's make some plans (id's need to be unique across all plans):
 
 ### Starting a Subscription
 
-The previous three steps are necessary to begin charging a customer on a monthly basis. 
-For our purposes we are trying to subscribe a customer to a plan named "stripe-clojure" that charges $9.99 and bills monthly. 
+The previous three steps are necessary to begin charging a customer on a monthly basis.
+For our purposes we are trying to subscribe a customer to a plan named "stripe-clojure" that charges $9.99 and bills monthly.
 Let's create a customer and assign them to the stripe-clojure plan:
 
 ```clojure
@@ -398,5 +398,3 @@ This returns a success response with the updated customer object to show that th
 The [stripe-clojure](https://github.com/prachetasp/stripe-clojure) library lays the foundation for a Stripe disruption in a functional environment. It contains all of the tools needed to build complex payment and customer management systems and is a great fit for building a serverless solution to payment processing. If you would like to know more about going Serverless contact EPX Labs to find out how you could improve application reliability while cutting costs. #webscale!
 
 *********************
-
-

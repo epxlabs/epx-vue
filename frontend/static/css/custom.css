@@ -60,3 +60,11 @@ div.article {
     position:relative;
     bottom:25px;
 }
+
+#header {
+  min-height: 150px;
+}
+
+.header-body {
+  top: 0px;
+}

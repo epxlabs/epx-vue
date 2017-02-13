@@ -1,5 +1,4 @@
 <template>
-  <div>
   <div id="intro">
   <header id="header" class="header-narrow" data-plugin-options='{"stickyEnabled": true, "stickyEnableOnBoxed": true, "stickyEnableOnMobile": true, "stickyStartAtElement": "#header", "stickySetTop": "0", "stickyChangeLogo": false}'>
     <div class="header-body">
@@ -60,7 +59,6 @@
       </div>
     </div>
   </header>
-</div>
 </div>
 </template>
 
