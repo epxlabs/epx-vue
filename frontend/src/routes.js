@@ -6,6 +6,7 @@ import NodeJS from './components/NodeJS'
 import Clojure from './components/Clojure'
 import Blog from './components/Blog'
 import Careers from './components/Careers'
+import BlogPost from './components/BlogPost'
 
 const routes = [
   {
@@ -47,6 +48,11 @@ const routes = [
     path: '/careers',
     name: 'Careers',
     component: Careers
+  },
+  {
+    path: '/blog/:title',
+    name: 'Blog-Post',
+    component: BlogPost
   }
 ]
 

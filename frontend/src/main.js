@@ -4,9 +4,11 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App'
 import routes from './routes'
+import Resource from 'vue-resource'
 
 /* eslint-disable no-new */
 Vue.use(VueRouter)
+Vue.use(Resource)
 
 var router = new VueRouter({
   routes: routes,
