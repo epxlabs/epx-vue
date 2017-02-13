@@ -2779,7 +2779,7 @@ window.theme = {};
 
 				// Check Sticky Header
 				self.checkStickyHeader = function() {
-					if ($window.scrollTop() >= parseInt(self.options.stickyStartAt)) {
+					if ($window.scrollTop() >= window.innerHeight) {
 						self.activateStickyHeader();
 					} else {
 						self.deactivateStickyHeader();
@@ -2829,11 +2829,6 @@ window.theme = {};
 						type: 'stickyHeader.deactivate'
 					});
 				};
-
-				// Always Sticky
-				if (parseInt(self.options.stickyStartAt) <= 0) {
-					self.activateStickyHeader();
-				}
 
 				// Set Logo
 				if (self.options.stickyChangeLogo) {
