@@ -7,7 +7,7 @@
       <br>
       <p class="lead">We build cost effective Serverless Web Applications.<br>We architect best-in-class Cloud IT Infrastructures.<br>We excel at fast, reliable, and efficient IT operations.<br>We maintain 24/7/365 IT Operations Support for clients around the globe.</p>
       <br>
-      <p><a class="btn btn-lg btn-primary btn-slider-action" href="/who-we-are" role="button">Learn More...</a></p>
+      <p><a class="btn btn-lg btn-primary btn-slider-action" role="button" href="/about">Learn More...</a></p>
     </div>
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 main-content" >

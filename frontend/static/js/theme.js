@@ -2779,7 +2779,7 @@ window.theme = {};
 
 				// Check Sticky Header
 				self.checkStickyHeader = function() {
-					if ($window.scrollTop() >= window.innerHeight) {
+					if ($window.scrollTop() >= window.innerHeight || window.location.pathname != "/") {
 						self.activateStickyHeader();
 					} else {
 						self.deactivateStickyHeader();
