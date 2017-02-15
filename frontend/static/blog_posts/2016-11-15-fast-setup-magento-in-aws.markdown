@@ -35,10 +35,10 @@ We have reworked the guides Cloudformation templates and corrected some flaws.
 
 ### After our enhancements you now have the following improvements:
 
-- Choose your own # of availability zoens: now you can select the exact number of availablity zones (up to 5) for setup. If there are less AZs in your region than what you would like to provision the maximum number allowed will be setup.
+- Choose your own # of availability zones: now you can select the exact number of availability zones (up to 5) for setup. If there are less AZs in your region than what you would like to provision the maximum number allowed will be setup.
 - Load balancing correcting: all your provisioned AZs will be included in load balancing.
 - Less Management: the EC2 NATs have been replaced by NAT Gateways and we have added a Bastion (as the entry point).
-- Cheaper Development environment option available. (We typically suggest that production and staging/dev are mimic's of one another so you can properly test infrastructure level changes in staging, however, this might be cost prohibitive for your organization. So, we've included a cheaper single EC2 option that can be turned off when not in use.) 
+- Cheaper Development environment option available. (We typically suggest that production and staging/dev are mimic's of one another so you can properly test infrastructure level changes in staging, however, this might be cost prohibitive for your organization. So, we've included a cheaper single EC2 option that can be turned off when not in use.)
 
 *****
 
@@ -53,7 +53,7 @@ cd magento-in-aws
 
 ### We suggest placing the cloudformation templates into S3 on your AWS account:
 
-**STEP 1.** Download Magento 1.9.x and Magento Sample Data - 1.x in `tar.gz` format (you will probably need to register at https://magento.com/) 
+**STEP 1.** Download Magento 1.9.x and Magento Sample Data - 1.x in `tar.gz` format (you will probably need to register at https://magento.com/)
 
 **STEP 2.** Create an s3 bucket for your Magento sample data.
 

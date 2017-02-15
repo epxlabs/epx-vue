@@ -11,11 +11,11 @@
 
         <p>Instead, you are no longer limited by thinking in terms of servers, operating systems, processes, RAM, patches, updates, and all those infrastructure headaches of the past. No longer do you need to orchestrate a fleet of servers in perfect unison to achieve scalability in the cloud.</p>
 
-        <p>With the rise of the serverless way of thinking you have the relatively infinite capacity of Amazon Web Services at your fingertips. Remember, this is the same technology that powers worldwide web scale services at Netflix. The difference? You dont have the to worry about the configuration and management overhead of running your own virtualized server fleet.</p>
+        <p>With the rise of the serverless way of thinking you have the relatively infinite capacity of Amazon Web Services at your fingertips. Remember, this is the same technology that powers worldwide web scale services at Netflix. The difference? You do not have to worry about the configuration and management overhead of running your own virtualized server fleet.</p>
 
-        <p>One of the most important principles of good infrastructure management is simple beats complex wherenever possible.</p>
+        <p>One of the most important principles of good infrastructure management is that simplicity beats complexity.</p>
 
-        <p>AWS Lambda and the other cloud functions-as-a-service platforms bring simplicity to your infrastructure.</p>
+        <p>AWS Lambda and the other cloud platforms bring simplicity to your infrastructure.</p>
 
         <p>In a serverless world your code is treated more like a discrete program executing on a giant computer rathen than a bunch of computers disparately running your code. What we mean is, you don’t worry about how many EC2 instances are running your code, you don’t worry if those instances have enough memory or compute power, you don’t worry about operating systems, patches, configuration scripts or any of that.</p>
 

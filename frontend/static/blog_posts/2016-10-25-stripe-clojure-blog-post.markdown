@@ -5,7 +5,7 @@
 
 Stripe is a leading provider of payment and subscription management solutions for businesses around the world. The most notable feature of Stripe is their nearly immaculate implementation of a REST API. Developers can simply access the API or build applications that leverage the API to automate away business pains such as recurring customer billing (subscriptions) or manipulating payment information.
 
-[stripe-clojure](https://github.com/prachetasp/stripe-clojure) is a Clojure library which is designed to implement the Stripe API in a functional manner. The library handles API calls to Stripe which allows developers to interact with the API in a clean and simple to use functional environment. This article will cover the basics of the [stripe-clojure](https://github.com/prachetasp/stripe-clojure) library along with a few examples to get help you get started accepting Stripe payments. The tutorial will be levarage emacs-live with a cider REPL (EPX Labs will soon be open sourcing our emacs-live + add-ons development environment affectionately named the "labkit").
+[stripe-clojure](https://github.com/prachetasp/stripe-clojure) is a Clojure library which is designed to implement the Stripe API in a functional manner. The library handles API calls to Stripe which allows developers to interact with the API in a clean and simple functional environment. This article will cover the basics of the [stripe-clojure](https://github.com/prachetasp/stripe-clojure) library along with a few examples to help you get started accepting Stripe payments. The tutorial will leverage emacs-live with a cider REPL (EPX Labs will soon be open sourcing our emacs-live + add-ons development environment affectionately named the "labkit").
 
 [stripe-clojure](https://github.com/prachetasp/stripe-clojure) was developed with a focus on slim dependencies. This makes [stripe-clojure](https://github.com/prachetasp/stripe-clojure) ideal for use on *Serverless*, AWS Lambda, IBM OpenWhisk, etc. systems.
 
@@ -161,7 +161,7 @@ Plans are the implementation of your business logic. You set up plans to let Str
 
 ### Sources
 
-Customer payment information is stored securely by Stripe as a source. When creating a source for a customer it is not necessary to hold any payment details thereby removing PCI compliance concerns. You must communicate with Stripe using tokenized payment details so sensitive information nevertraverses your infrastructure.
+Customer payment information is stored securely by Stripe as a source. When creating a source for a customer it is not necessary to hold any payment details thereby removing PCI compliance concerns. You must communicate with Stripe using tokenized payment details so sensitive information never traverses your infrastructure.
 
 Here is an example of a credit card source (remember, sources can be either credit cards or bank accounts):
 
@@ -201,7 +201,7 @@ Here is an example of a credit card source (remember, sources can be either cred
 
 ## Getting started with the library
 
-Today we will show the basic process of creating a test customer using the [stripe-clojure](https://github.com/prachetasp/stripe-clojure) library. We will also run through the process of creating a subscription and processing payments. When testing the library it is important to use the Test API key so that no real payments are processed.
+Today we will show the basic process of creating a test customer using the [stripe-clojure](https://github.com/prachetasp/stripe-clojure) library. We will also run through the process of creating a subscription and processing payments. When testing the library it is important to use the test API key so that no real payments are processed.
 
 *********************
 
@@ -395,6 +395,6 @@ This returns a success response with the updated customer object to show that th
 
 ### Taking it a step further
 
-The [stripe-clojure](https://github.com/prachetasp/stripe-clojure) library lays the foundation for a Stripe disruption in a functional environment. It contains all of the tools needed to build complex payment and customer management systems and is a great fit for building a serverless solution to payment processing. If you would like to know more about going Serverless contact EPX Labs to find out how you could improve application reliability while cutting costs. #webscale!
+The [stripe-clojure](https://github.com/prachetasp/stripe-clojure) library lays the foundation for a Stripe application in a functional environment. It contains all of the tools needed to build complex payment and customer management systems and is a great fit for building a serverless solution to payment processing. If you would like to know more about going Serverless contact EPX Labs to find out how you could improve application reliability while cutting costs. #webscale!
 
 *********************
