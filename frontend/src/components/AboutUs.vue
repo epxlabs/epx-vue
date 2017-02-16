@@ -12,8 +12,8 @@
 
   <p>EPX Labs is a full-service, end-to-end IT Managed Services Partner (MSP).
   Our laboratory was founded on the principle of challenging each and every
-  costly IT assumption of the past. We believe in implementing Faster, Simpler,
-  Cheaper, and more Reliable IT solutions.</p>
+  costly IT assumption of the past. We believe in implementing <strong>faster</strong>, <strong>simpler</strong>,
+  <strong>cheaper</strong>, and more <strong>reliable</strong> IT solutions.</p>
 
   <p>EPX Labs achieves success through:</p>
 

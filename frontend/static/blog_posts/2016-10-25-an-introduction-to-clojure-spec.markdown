@@ -1,7 +1,7 @@
 # An Introduction to Clojure.Spec
 ##### By Alex Martin
 
-[Clojure.spec](http://clojure.org/about/spec) is a great tool for adding some tests and validation to your clojure project. 
+[Clojure.spec](http://clojure.org/about/spec) is a great tool for adding some tests and validation to your clojure project.
 
 To begin require clojure.spec in your clj namespace.
 
@@ -10,7 +10,7 @@ To begin require clojure.spec in your clj namespace.
     (:require [clojure.spec :as s])
 ```
 
-To begin let's define specs by associating them with a keyword and a validation, like so:
+Next, we can define specs by associating them with a keyword and a validation, like so:
 
 ```clojure
 (s/def ::first-name string?)
@@ -78,4 +78,3 @@ You can also pass maps to either `conform` or `valid?` to find out whether or no
 (s/conform ::person (::first-name "Alex" ::email "amartin@epxlabs.com")
 => false
 ```
-
