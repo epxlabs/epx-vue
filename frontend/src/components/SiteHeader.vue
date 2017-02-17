@@ -26,28 +26,28 @@
                   <nav>
                     <ul class="nav nav-pills" id="mainNav">
                       <li id="devops">
-                        <a data-hash data-hash-offset="70" href="devops" class="nav-links">DEVOPS</a>
+                        <a data-hash data-hash-offset="70" href="/devops" class="nav-links">DEVOPS</a>
                       </li>
                       <li id="serverless">
-                        <a data-hash data-hash-offset="70" href="serverless" class="nav-links">SERVERLESS</a>
+                        <a data-hash data-hash-offset="70" href="/serverless" class="nav-links">SERVERLESS</a>
                       </li>
                       <li id="nodejs">
-                        <a data-hash data-hash-offset="70" href="nodejs" class="nav-links">NODE.JS</a>
+                        <a data-hash data-hash-offset="70" href="/nodejs" class="nav-links">NODE.JS</a>
                       </li>
                       <li id="clojure">
-                        <a data-hash data-hash-offset="70" href="clojure" class="nav-links">CLOJURE</a>
+                        <a data-hash data-hash-offset="70" href="/clojure" class="nav-links">CLOJURE</a>
                       </li>
                       <li id="who-we-are">
-                        <a data-hash data-hash-offset="70" href="about" class="nav-links">WHO WE ARE</a>
+                        <a data-hash data-hash-offset="70" href="/about" class="nav-links">WHO WE ARE</a>
                       </li>
                       <li id="blog">
-                        <a data-hash data-hash-offset="70" href="blog" class="nav-links">BLOG</a>
+                        <a data-hash data-hash-offset="70" href="/blog" class="nav-links">BLOG</a>
                       </li>
                       <li id="careers">
-                        <a data-hash data-hash-offset="70" href="careers" class="nav-links">JOIN US!</a>
+                        <a data-hash data-hash-offset="70" href="/careers" class="nav-links">JOIN US!</a>
                       </li>
                       <li id="contact">
-                        <a data-hash data-hash-offset="70" href="#contact" class="nav-links">CONTACT US</a>
+                        <a data-hash data-hash-offset="70" href="/#contact" class="nav-links">CONTACT US</a>
                       </li>
                     </ul>
                   </nav>
