@@ -5,11 +5,11 @@ import VueRouter from 'vue-router'
 import App from './App'
 import routes from './routes'
 import Resource from 'vue-resource'
-
+import vueSmoothScroll from 'vue-smoothscroll'
 /* eslint-disable no-new */
 Vue.use(VueRouter)
 Vue.use(Resource)
-
+Vue.use(vueSmoothScroll)
 var router = new VueRouter({
   routes: routes,
   mode: 'history',
