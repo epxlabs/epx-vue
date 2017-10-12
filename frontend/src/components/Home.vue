@@ -27,37 +27,39 @@
           You can say goodbye to ongoing infrastructure management concerns: security updates, deployment automation, and production scaling - we handle that for you.
         </p>
       </div>
-      <ContactUs></ContactUs>
-      <SiteFooter></SiteFooter>
     </div>
-  </template>
-  <script>
+    <ContactUs></ContactUs>
+    <SiteFooter></SiteFooter>
+  </div>
+</template>
 
-  import Slider from './Slider'
-  import SiteHeader from './SiteHeader'
-  import ContactUs from './ContactUs'
-  import SiteFooter from './SiteFooter'
+<script>
+import Slider from './Slider'
+import SiteHeader from './SiteHeader'
+import ContactUs from './ContactUs'
+import SiteFooter from './SiteFooter'
 
-  export default {
-    name: 'Home',
-    data () {
-      return {
-        msg: 'Welcome to Your Vue.js App'
-      }
-    },
-    components: {
-      Slider,
-      SiteHeader,
-      ContactUs,
-      SiteFooter
+export default {
+  name: 'Home',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    Slider,
+    SiteHeader,
+    ContactUs,
+    SiteFooter
   }
-  </script>
-  <style>
-  div.main-content > p {
+}
+</script>
+
+<style>
+div.main-content > p {
     font-size: 18px;
     font-weight: 100;
     line-height: 1.75;
     margin-bottom: 30px;
-  }
-  </style>
+}
+</style>

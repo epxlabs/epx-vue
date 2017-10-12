@@ -1,20 +1,20 @@
 {
   "name": "epx_website",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "cmcgill2 <cmcgill2@asu.edu>",
+  "description": "epx labs website with vuejs",
+  "author": "EPX Labs, Inc.",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "node build/build.js",
-    "lint": "eslint --ext .js,.vue src"
+    "build": "node build/build.js"
   },
   "dependencies": {
     "marked": "^0.3.6",
     "vue": "^2.1.10",
     "vue-resource": "^1.2.0",
     "vue-router": "^2.2.0",
-    "vue-smooth-scroll": "^1.0.11"
+    "vue-smooth-scroll": "^1.0.11",
+    "vue-smoothscroll": "^0.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
