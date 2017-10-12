@@ -1,4 +1,5 @@
 <template>
+  <div>
   <div class="slider-container rev_slider_wrapper" style="height: 1000px;">
   <div id="revolutionSlider" class="slider rev_slider" data-plugin-revolution-slider data-plugin-options='{"sliderLayout": "fullscreen", "fullScreenOffsetContainer": "", "fullScreenOffset": "0"}'>
     <ul>
@@ -56,7 +57,7 @@
              data-start="2000"
              style="z-index: 5"
              data-transform_in="y:[100%];opacity:0;s:500;">Check out our options and features.</div>-->
-        <a class="tp-caption btn btn-lg btn-primary btn-slider-action" href="#learn-more"
+        <a class="tp-caption btn btn-lg btn-primary btn-slider-action" href="#learn-more" id="learn-more-btn"
            data-hash
            data-hash-offset="85"
            data-x="center" data-hoffset="0"
@@ -71,6 +72,7 @@
       </li>
     </ul>
   </div>
+</div>
 </div>
 </template>
 

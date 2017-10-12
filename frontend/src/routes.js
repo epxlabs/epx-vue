@@ -6,6 +6,8 @@ import NodeJS from './components/NodeJS'
 import Clojure from './components/Clojure'
 import Blog from './components/Blog'
 import Careers from './components/Careers'
+import BlogPost from './components/BlogPost'
+import NotFoundView from './components/404.vue'
 
 const routes = [
   {
@@ -47,6 +49,16 @@ const routes = [
     path: '/careers',
     name: 'Careers',
     component: Careers
+  },
+  {
+    path: '/blog/:title',
+    name: 'Blog-Post',
+    component: BlogPost
+  },
+  {
+    // not found handler
+    path: '*',
+    component: NotFoundView
   }
 ]
 

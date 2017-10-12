@@ -1635,9 +1635,9 @@ window.theme = {};
 
 // Sticky
 (function(theme, $) {
-	
+
 	theme = theme || {};
-	
+
 	var instanceName = '__sticky';
 
 	var PluginSticky = function($el, opts) {
@@ -1705,7 +1705,7 @@ window.theme = {};
 			} else {
 				return new PluginSticky($this, opts);
 			}
-			
+
 		});
 	}
 
@@ -2060,7 +2060,7 @@ window.theme = {};
 					e.preventDefault();
 					$.get(self.options.refreshCaptchaURL, function(url) {
 						$('#captcha-image').attr('src', url);
-					});					
+					});
 				});
 
 			},
@@ -2170,9 +2170,9 @@ window.theme = {};
 
 // Word Rotate
 (function(theme, $) {
-	
+
 	theme = theme || {};
-	
+
 	var instanceName = '__wordRotate';
 
 	var PluginWordRotate = function($el, opts) {
@@ -2229,7 +2229,7 @@ window.theme = {};
 				.width(firstItem.width() + "px")
 				.append(firstItemClone);
 
-			$el				
+			$el
 				.addClass("active");
 
 			setInterval(function() {
@@ -2278,7 +2278,7 @@ window.theme = {};
 			} else {
 				return new PluginWordRotate($this, opts);
 			}
-			
+
 		});
 	}
 
@@ -2779,13 +2779,13 @@ window.theme = {};
 
 				// Check Sticky Header
 				self.checkStickyHeader = function() {
-					if ($window.scrollTop() >= parseInt(self.options.stickyStartAt)) {
+					if ($window.scrollTop() >= window.innerHeight || window.location.pathname != "/") {
 						self.activateStickyHeader();
 					} else {
 						self.deactivateStickyHeader();
 					}
 				};
-				
+
 				// Activate Sticky Header
 				self.activateStickyHeader = function() {
 
@@ -2829,11 +2829,6 @@ window.theme = {};
 						type: 'stickyHeader.deactivate'
 					});
 				};
-
-				// Always Sticky
-				if (parseInt(self.options.stickyStartAt) <= 0) {
-					self.activateStickyHeader();
-				}
 
 				// Set Logo
 				if (self.options.stickyChangeLogo) {

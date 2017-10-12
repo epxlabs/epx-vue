@@ -27,6 +27,8 @@
 
   </div>
 </div>
+<ContactUs></ContactUs>
+<SiteFooter></SiteFooter>
 </div>
 </template>
 <style>
@@ -39,6 +41,8 @@
 </style>
 <script>
 import SiteHeader from './SiteHeader'
+import ContactUs from './ContactUs'
+import SiteFooter from './SiteFooter'
 export default {
   name: 'Clojure',
   data () {
@@ -47,7 +51,9 @@ export default {
     }
   },
   components: {
-    SiteHeader
+    SiteHeader,
+    ContactUs,
+    SiteFooter
   }
 }
 </script>

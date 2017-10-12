@@ -7,7 +7,7 @@
           <div class="header-column">
             <div class="header-logo">
               <a href="/" id="header-logo">
-                <img src="/img/logos/epx_logo.svg" alt="EPX Labs" width="205" height="50" data-sticky-width="164" data-sticky-height="40" data-sticky-top="7">
+                <img src="/static/img/logos/epx_logo.svg" alt="EPX Labs" width="205" height="50" data-sticky-width="164" data-sticky-height="40" data-sticky-top="7">
               </a>
             </div>
           </div>
@@ -26,28 +26,28 @@
                   <nav>
                     <ul class="nav nav-pills" id="mainNav">
                       <li id="devops">
-                        <a data-hash data-hash-offset="70" href="/devops" class="nav-links">DEVOPS</a>
+                        <router-link :to="'/devops'" data-hash data-hash-offset="70" class="nav-links">DEVOPS</router-link>
                       </li>
                       <li id="serverless">
-                        <a data-hash data-hash-offset="70" href="/serverless" class="nav-links">SERVERLESS</a>
+                        <router-link :to="'/serverless'" data-hash data-hash-offset="70" class="nav-links">SERVERLESS</a></router-link>
                       </li>
                       <li id="nodejs">
-                        <a data-hash data-hash-offset="70" href="/nodejs" class="nav-links">NODE.JS</a>
+                        <router-link :to="'/nodejs'" data-hash data-hash-offset="70" class="nav-links">NODE.JS</a></router-link>
                       </li>
                       <li id="clojure">
-                        <a data-hash data-hash-offset="70" href="/clojure" class="nav-links">CLOJURE</a>
+                        <router-link :to="'/clojure'" data-hash data-hash-offset="70" class="nav-links">CLOJURE</a></router-link>
                       </li>
                       <li id="who-we-are">
-                        <a data-hash data-hash-offset="70" href="/who-we-are" class="nav-links">WHO WE ARE</a>
+                        <router-link :to="'/about'" data-hash data-hash-offset="70" class="nav-links">WHO WE ARE</a></router-link>
                       </li>
                       <li id="blog">
-                        <a data-hash data-hash-offset="70" href="/blog" class="nav-links">BLOG</a>
+                        <router-link :to="'/blog'" data-hash data-hash-offset="70" class="nav-links">BLOG</a></router-link>
                       </li>
                       <li id="careers">
-                        <a data-hash data-hash-offset="70" href="/careers" class="nav-links">JOIN US!</a>
+                        <router-link :to="'/careers'" data-hash data-hash-offset="70" class="nav-links">JOIN US!</a></router-link>
                       </li>
-                      <li id="contact">
-                        <a data-hash data-hash-offset="70" href="#contact" class="nav-links">CONTACT US</a>
+                      <li id="contact-us">
+                        <a data-hash data-hash-offset="70" class="nav-links" @click="smoothScroll()">CONTACT US</a>
                       </li>
                     </ul>
                   </nav>
@@ -66,10 +66,15 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: 'SiteHeader',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods: {
+    smoothScroll () {
+      this.$SmoothScroll(document.getElementById('contact'), 1500)
     }
   }
 }

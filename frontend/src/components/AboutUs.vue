@@ -1,5 +1,6 @@
 <template>
   <div>
+  <SiteHeader></SiteHeader>
   <div class="jumbotron">
     <h1>About EPX Labs</h1>
   </div>
@@ -11,8 +12,8 @@
 
   <p>EPX Labs is a full-service, end-to-end IT Managed Services Partner (MSP).
   Our laboratory was founded on the principle of challenging each and every
-  costly IT assumption of the past. We believe in implementing Faster, Simpler,
-  Cheaper, and more Reliable IT solutions.</p>
+  costly IT assumption of the past. We believe in implementing <strong>faster</strong>, <strong>simpler</strong>,
+  <strong>cheaper</strong>, and more <strong>reliable</strong> IT solutions.</p>
 
   <p>EPX Labs achieves success through:</p>
 
@@ -37,18 +38,28 @@
   <p>We are passionate about what we do -- from clean commit histories to elegant abstraction through thoughtful analysis. You found us because you are passionate about what you do. Together we will build great tools.</p>
 
     </div>
+    <ContactUs></ContactUs>
+    <SiteFooter></SiteFooter>
   </div>
 </template>
 
 
 
 <script>
+import SiteHeader from './SiteHeader'
+import ContactUs from './ContactUs'
+import SiteFooter from './SiteFooter'
 export default {
   name: 'AboutUs',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    SiteHeader,
+    ContactUs,
+    SiteFooter
   }
 }
 </script>

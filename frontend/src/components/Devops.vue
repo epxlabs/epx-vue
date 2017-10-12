@@ -1,5 +1,6 @@
 <template>
   <div>
+    <SiteHeader></SiteHeader>
     <div class="jumbotron">
       <h1>Cloud Apps need DevOps</h1>
     </div>
@@ -8,7 +9,7 @@
       <div class="main-content  col-md-8 col-md-offset-2">
 
         <p>
-          The wide-spread adoption of the Public Cloud brought us many wonderful things and a few less than wonderful things. While it is simpler than ever to provision large swarms of servers and unleash mountains of compute power on disparate datasets there still seems to be a tremendous amount of complexity in the most basic mobile or web application.
+          The wide-spread adoption of the public cloud brought us many wonderful things and a few less than wonderful things. While it is simpler than ever to provision swarms of servers and unleash mountains of compute power on disparate datasets, there still seems to be a tremendous amount of complexity in the most basic mobile or web application.
         </p>
 
         <p>
@@ -40,7 +41,7 @@
         </p>
 
         <p>
-          At EPX Labs, we are experts and leverage years of DevOps failures and successes to turn a tangled mess of cloud components and compute instances into a manageable system that scales effortlessly to meet your needs.
+          At EPX Labs, we are experts and incorporate years of DevOps failures and successes to turn a tangled mess of cloud components and compute instances into a manageable system that scales effortlessly to meet your needs.
         </p>
 
         <p>
@@ -56,21 +57,32 @@
         </p>
 
         <p>
-          Our clients use our expertise to get the most out of their investment in the cloud and getting DevOps right is a huge part of the value we will provide your business.
+          Our clients use our expertise to get the most out of their investment in the cloud and getting DevOps right is a core value we provide.
         </p>
 
       </div>
     </div>
+    <ContactUs></ContactUs>
+    <SiteFooter></SiteFooter>
   </div>
 </template>
 
 <script>
+import SiteHeader from './SiteHeader'
+import ContactUs from './ContactUs'
+import SiteFooter from './SiteFooter'
+
 export default {
   name: 'Devops',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    SiteHeader,
+    ContactUs,
+    SiteFooter
   }
 }
 </script>
