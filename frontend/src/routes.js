@@ -7,6 +7,7 @@ import Clojure from './components/Clojure'
 import Blog from './components/Blog'
 import Careers from './components/Careers'
 import BlogPost from './components/BlogPost'
+import Reaper from './components/Reaper'
 import NotFoundView from './components/404.vue'
 
 const routes = [
@@ -54,6 +55,11 @@ const routes = [
     path: '/blog/:title',
     name: 'Blog-Post',
     component: BlogPost
+  },
+  {
+    path: '/harvest',
+    name: 'Reaper',
+    component: Reaper
   },
   {
     // not found handler
