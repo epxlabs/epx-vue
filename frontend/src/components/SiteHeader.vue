@@ -41,7 +41,7 @@
                         <router-link :to="'/about'" data-hash data-hash-offset="70" class="nav-links">WHO WE ARE</a></router-link>
                       </li>
                       <li id="blog">
-                        <router-link :to="'/blog'" data-hash data-hash-offset="70" class="nav-links">BLOG</a></router-link>
+                        <router-link :to="'/harvest'" data-hash data-hash-offset="70" class="nav-links">Harvest</a></router-link>
                       </li>
                       <li id="careers">
                         <router-link :to="'/careers'" data-hash data-hash-offset="70" class="nav-links">JOIN US!</a></router-link>
